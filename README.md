@@ -8,7 +8,7 @@
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Liammkr/WST)
 [![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Liammkr/WST&branch=main&name={repository})
 
-<a href='https://github.com/titaniumnetwork-dev/ultraviolet-node'>View Source</a>
+<a href='https://github.com/Liammkr/WST'>View Source</a>
 
 WST is a Python script designed to automate the sending of multiple emails through Simple Mail Transfer Protocol (SMTP). It provides a simple command-line interface for users to input sender details, recipient information, and email content, enabling the rapid dispatch of emails for various purposes such as notifications, alerts, or announcements.
 

@@ -16,16 +16,22 @@ Requirements:
 
 Usage:
 1. Clone the Repository: Begin by cloning the Email-Spammer repository to your local machine using Git.
-   ```git clone https://github.com/yourusername/email-spammer.git```
+   ```
+   git clone https://github.com/yourusername/email-spammer.git
+   ```
 
-2. Install Dependencies: Navigate to the project directory and install the required dependencies using pip.
-```cd email-spammer
-   pip install -r requirements.txt```
+3. Install Dependencies: Navigate to the project directory and install the required dependencies using pip.
+   ```
+   cd email-spammer
+   pip install -r requirements.txt
+   ```
 
 3. Run the Script: Execute the Python script to start the email-spamming process. Follow the prompts to provide the necessary information, including sender email, sender app password (for Gmail), recipient email, subject, body, and the number of emails to send.
- ```python email_spammer.py```
+  ```
+  python email_spammer.py
+  ```
 
-4. Sit Back and Relax: Once the script is running, it will send the specified number of emails with the provided details. Monitor the console output for progress updates and status messages.
+5. Sit Back and Relax: Once the script is running, it will send the specified number of emails with the provided details. Monitor the console output for progress updates and status messages.
 
 Configuration:
 - Sender Email and Password: Ensure that you have the correct sender email and password (app password for Gmail) configured in the script. For Gmail users, it is recommended to enable "less secure app access" or use app passwords for authentication.

@@ -22,7 +22,7 @@ print(
   EG      LE.    EG.            fE         jt DWi   ,KK: ;##D.    L##,       jt  ,;     
   ;       ;@     ,               :                       ,,,      .,,                   
                            
-                                                                              liamm - t.me/wst
+                                                                              liamm --
                                                                                         """
 )
 senderEmail = input(Fore.LIGHTBLUE_EX +"Sender Email: ") 
@@ -36,18 +36,13 @@ def email_alert(subject, body, to):
     msg.set_content(body)
     msg['subject'] = subject
     msg['to'] = to
-
     user = str(senderEmail)
     msg['from'] = user
     password = str(senderPass)
-    #vqkjdjnwtzyszfdi
-    #xbedywkocqyhkjnh
-  
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
     server.login(user, password)
     server.send_message(msg)
-
     server.quit()
 aInt = int(a)
 while aInt > 0:

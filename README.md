@@ -1,6 +1,8 @@
-Email-Spammer
+<p align="center"><img src="https://raw.githubusercontent.com/titaniumnetwork-dev/Ultraviolet-Static/main/public/uv.png" height="200"></p>
 
-Email-Spammer is a Python script designed to automate the sending of multiple emails through Simple Mail Transfer Protocol (SMTP). It provides a simple command-line interface for users to input sender details, recipient information, and email content, enabling the rapid dispatch of emails for various purposes such as notifications, alerts, or announcements.
+<h1 align="center"> </h1>
+
+WST is a Python script designed to automate the sending of multiple emails through Simple Mail Transfer Protocol (SMTP). It provides a simple command-line interface for users to input sender details, recipient information, and email content, enabling the rapid dispatch of emails for various purposes such as notifications, alerts, or announcements.
 
 Features:
 - Customizable Email Content: Users can input the subject and body of the email, allowing for personalized messages tailored to the recipient.
@@ -27,9 +29,9 @@ Usage:
    ```
 
 3. Run the Script: Execute the Python script to start the email-spamming process. Follow the prompts to provide the necessary information, including sender email, sender app password (for Gmail), recipient email, subject, body, and the number of emails to send.
-  ```
-  python email_spammer.py
-  ```
+   ```
+   python email_spammer.py
+   ```
 
 5. Sit Back and Relax: Once the script is running, it will send the specified number of emails with the provided details. Monitor the console output for progress updates and status messages.
 

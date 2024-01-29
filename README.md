@@ -1,16 +1,16 @@
-<p align="center"><img src="https://github.com/Liammkr/WST/blob/main/WSTLOGO.png"height="200"></p>
+<p align="center"><img src="https://github.com/Liammkr/WSTMAIL/blob/main/WSTLOGO.png"height="200"></p>
 
 
 
-[![Deploy to Heroku](https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/Liammkr/WST)
-[![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://replit.com/github/Liammkr/WST)
-[![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://railway.app/new/template?template=https://github.com/Liammkr/WST)
-[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Liammkr/WST)
-[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Liammkr/WST&branch=main&name={repository})
+[![Deploy to Heroku](https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/Liammkr/WSTMAIL)
+[![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://replit.com/github/Liammkr/WSTMAIL)
+[![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://railway.app/new/template?template=https://github.com/Liammkr/WSTMAIL)
+[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Liammkr/WSTMAIL)
+[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Liammkr/WSTMAIL&branch=main&name=WSTMAIL)
 
-<a href='https://github.com/Liammkr/WST'>View Source</a>
+<a href='https://github.com/Liammkr/WSTMAIL'>View Source</a>
 
-WST is a Python script designed to automate the sending of multiple emails through Simple Mail Transfer Protocol (SMTP). It provides a simple command-line interface for users to input sender details, recipient information, and email content, enabling the rapid dispatch of emails for various purposes such as notifications, alerts, or announcements.
+WSTMAIL is a Python script designed to automate the sending of multiple emails through Simple Mail Transfer Protocol (SMTP). It provides a simple command-line interface for users to input sender details, recipient information, and email content, enabling the rapid dispatch of emails for various purposes such as notifications, alerts, or announcements.
 
 Features:
 - Customizable Email Content: Users can input the subject and body of the email, allowing for personalized messages tailored to the recipient.
@@ -27,18 +27,18 @@ Requirements:
 Usage:
 1. Clone the Repository: Begin by cloning the Email-Spammer repository to your local machine using Git.
    ```
-   git clone https://github.com/Liammkr/WST.git
+   git clone https://github.com/Liammkr/WSTMAIL.git
    ```
 
 3. Install Dependencies: Navigate to the project directory and install the required dependencies using pip.
    ```
-   cd WST
+   c 
    pip install -r requirements.txt
    ```
 
 3. Run the Script: Execute the Python script to start the email-spamming process. Follow the prompts to provide the necessary information, including sender email, sender app password (for Gmail), recipient email, subject, body, and the number of emails to send.
    ```
-   python main.py
+   python WSTMAIL.py
    ```
 
 5. Sit Back and Relax: Once the script is running, it will send the specified number of emails with the provided details. Monitor the console output for progress updates and status messages.

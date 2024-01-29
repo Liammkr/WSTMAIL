@@ -1,2 +1,4 @@
 senderemail=""
 senderapppass=""
+body=""
+subject=""

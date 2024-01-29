@@ -1,2 +1,2 @@
-senderemail="hi"
+senderemail=""
 senderapppass=""

@@ -17,6 +17,7 @@ Features:
 - Multiple Recipients: Although this version of the script currently supports sending emails to a single recipient, it can be easily extended to handle multiple recipients by modifying the code accordingly.
 - Error Handling: Basic error handling is implemented to handle authentication errors and connection issues with the SMTP server.
 - Colored Output: The script utilizes the colorama library to provide colorful output, enhancing user experience and making the process more visually appealing.
+- Settings.txt can be changed for easy sending and body="" and subject="" can be replaced with body="random" and subject="random" for easy randomizer.
 
 Requirements:
 - Python 3.x: The script is written in Python 3 and requires a compatible interpreter to run.

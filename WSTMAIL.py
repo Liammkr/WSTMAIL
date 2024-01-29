@@ -6,6 +6,7 @@ import os
 from time import sleep
 import re
 import requests
+from random import randint
 init()
 start = True
 while start == True:
@@ -32,17 +33,20 @@ while start == True:
                                                                                         """
 )
     with open('settings.txt', 'r') as file:
-    # Read the file line by line
+        # Read the file line by line
         lines = file.readlines()
-    # Iterate over the lines
-        for i in range(0, len(lines), 2):
-            sender_email_match = re.search(r'senderemail="(.*?)"', lines[i])
-            sender_apppass_match = re.search(r'senderapppass="(.*?)"', lines[i + 1])
-            if sender_email_match and sender_apppass_match:
-                sender_email = sender_email_match.group(1)
-                sender_apppass = sender_apppass_match.group(1)
-            #print("Sender email:", sender_email)
-            #print("Sender app pass:", sender_apppass)
+        # Iterate over the lines
+        for i in range(0, len(lines), 4):
+            if i + 3 < len(lines):  # Check if there are enough lines left in the file
+                sender_email_match = re.search(r'senderemail="(.*?)"', lines[i])
+                sender_apppass_match = re.search(r'senderapppass="(.*?)"', lines[i + 1])
+                body_match = re.search(r'body="(.*?)"', lines[i + 2])
+                subject_match = re.search(r'subject="(.*?)"', lines[i + 3])
+                if sender_email_match and sender_apppass_match and body_match and subject_match:
+                    sender_email = sender_email_match.group(1)
+                    sender_apppass = sender_apppass_match.group(1)
+                    pre_body = body_match.group(1)
+                    pre_subject = subject_match.group(1)
     if sender_email == '':
         senderEmail = input(Fore.LIGHTBLUE_EX +"Sender Email: ")
     else: 
@@ -51,9 +55,15 @@ while start == True:
         senderPass = input(Fore.LIGHTBLUE_EX +"Sender App Password: ")
     else:
         senderPass = sender_apppass 
-    toEmail = input(Fore.LIGHTBLUE_EX +"Recieving Email: ") 
-    subjectInput = input(Fore.LIGHTBLUE_EX +"Subject: ")
-    bodyInput = input(Fore.LIGHTBLUE_EX +"Body: ")
+    toEmail = input(Fore.LIGHTBLUE_EX +"Recieving Email: ")
+    if pre_subject == '': 
+        subjectInput = input(Fore.LIGHTBLUE_EX +"Subject: ")
+    else:
+        subjectInput = pre_subject
+    if pre_body == '':
+        bodyInput = input(Fore.LIGHTBLUE_EX +"Body: ")
+    else:
+        bodyInput = pre_body
     a = input(Fore.LIGHTBLUE_EX +"Ammount Of Emails: ")
     def email_alert(subject, body, to):
        msg = EmailMessage()
@@ -71,6 +81,10 @@ while start == True:
     aInt = int(a)
     t=0
     while aInt > 0:
+        if pre_body == 'random':
+            bodyInput = randint(10000000000000000000000000000000000,999999999999999999999999999999999999999999999999999)
+        if pre_subject == 'random':
+            subjectInput = randint(10000000000000000000000000000000000,999999999999999999999999999999999999999999999999999)
         def measure_response_time(url):
             try:
                 response = requests.get(url)

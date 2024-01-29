@@ -90,7 +90,7 @@ while start == True:
                 response = requests.get(url)
                 if response.status_code == 200:
                     ping = response.elapsed.total_seconds() * 1000
-                    print(Fore.GREEN + "Emails Sent: "+ str(t)+ "| STATUS: [201] ACCEPTED"+ " | Ping To www.gmail.com : " + str(response.elapsed.total_seconds() * 1000))
+                    print(Fore.GREEN + "Emails Sent: "+ str(t)+ " | STATUS: [201] ACCEPTED"+ " | Ping To www.gmail.com : " + str(response.elapsed.total_seconds() * 1000))
                 else:
                     print(f"Failed to fetch {url}, status code: {response.status_code}")
             except Exception as e:

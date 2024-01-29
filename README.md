@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/Liammkr/WST/main/WSTLOGO.png?token=GHSAT0AAAAAACNOHIRIUZTQ4P7K5MMSGYEAZNW4Z5Q" height="200"></p>
+<p align="center"><img src="https://github.com/Liammkr/WST/blob/main/WSTLOGO.png"height="200"></p>
 
 
 

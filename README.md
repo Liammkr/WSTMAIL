@@ -32,7 +32,7 @@ Usage:
 
 3. Install Dependencies: Navigate to the project directory and install the required dependencies using pip.
    ```
-   c 
+   cd Downloads/WSTMAIL-main 
    pip install -r requirements.txt
    ```
 

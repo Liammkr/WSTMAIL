@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/Liammkr/WSTMAIL/blob/main/WSTLOGO.png"height="200"></p>
+<p align="center"><img src="https://github.com/Liammkr/WSTMAIL/blob/main/WSTLOGO.png?raw=true"height="200"></p>
 
 
 

@@ -4,6 +4,7 @@ from colorama import Fore
 from colorama import init
 import os
 from time import sleep
+import re
 init()
 start = True
 while start == True:
@@ -29,8 +30,26 @@ while start == True:
                                                                               liamm --
                                                                                         """
 )
-    senderEmail = input(Fore.LIGHTBLUE_EX +"Sender Email: ") 
-    senderPass = input(Fore.LIGHTBLUE_EX +"Sender App Password: ") 
+    with open('settings.txt', 'r') as file:
+    # Read the file line by line
+        lines = file.readlines()
+    # Iterate over the lines
+        for i in range(0, len(lines), 2):
+            sender_email_match = re.search(r'senderemail="(.*?)"', lines[i])
+            sender_apppass_match = re.search(r'senderapppass="(.*?)"', lines[i + 1])
+            if sender_email_match and sender_apppass_match:
+                sender_email = sender_email_match.group(1)
+                sender_apppass = sender_apppass_match.group(1)
+            #print("Sender email:", sender_email)
+            #print("Sender app pass:", sender_apppass)
+    if sender_email == '':
+        senderEmail = input(Fore.LIGHTBLUE_EX +"Sender Email: ")
+    else: 
+        senderEmail = sender_email
+    if sender_apppass == '':
+        senderPass = input(Fore.LIGHTBLUE_EX +"Sender App Password: ")
+    else:
+        senderPass = sender_apppass 
     toEmail = input(Fore.LIGHTBLUE_EX +"Recieving Email: ") 
     subjectInput = input(Fore.LIGHTBLUE_EX +"Subject: ")
     bodyInput = input(Fore.LIGHTBLUE_EX +"Body: ")

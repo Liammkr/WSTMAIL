@@ -5,6 +5,7 @@ from colorama import init
 import os
 from time import sleep
 import re
+import requests
 init()
 start = True
 while start == True:
@@ -70,9 +71,19 @@ while start == True:
     aInt = int(a)
     t=0
     while aInt > 0:
+        def measure_response_time(url):
+            try:
+                response = requests.get(url)
+                if response.status_code == 200:
+                    ping = response.elapsed.total_seconds() * 1000
+                    print(Fore.GREEN + "Emails Sent: "+ str(t)+ "| STATUS: [201] ACCEPTED"+ " | Ping To www.gmail.com : " + str(response.elapsed.total_seconds() * 1000))
+                else:
+                    print(f"Failed to fetch {url}, status code: {response.status_code}")
+            except Exception as e:
+                print(f"Error while fetching {url}: {e}")
         email_alert(str(subjectInput),str(bodyInput),str(toEmail))
         t+=1
-        print(Fore.GREEN + "Emails Sent: "+ str(t)+ " STATUS: [201] ACCEPTED")
+        measure_response_time("https://www.gmail.com")
         aInt-=1
     else:
         print(Fore.YELLOW+"FINISHED")
